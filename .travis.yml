@@ -10,7 +10,4 @@ services:
 
 install: "pip install -r requirements.txt"
 
-script:
-  - behave tests/features
-  - PYTHONPATH=scripts python -m unittest discover tests
-
+script: behave tests/features
